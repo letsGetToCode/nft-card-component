@@ -5,25 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="card">
+    <img src="./images/image-equilibrium.jpg" alt="Equilibriun NFT image"/>
 
-  Equilibrium #3429
+    <h2>
+      Equilibrium #3429
+    </h2>
 
-  Our Equilibrium collection promotes balance and calm.
+    <p>
+      Our Equilibrium collection promotes balance and calm.
+    </p>
 
-  0.041 ETH
-  3 days left
+    <div class="info">
+      <span class="eth">
+        0.041 ETH
+      </span>
+
+      <span class="clock">
+        3 days left
+      </span>
+      
+    </div>
+
+    <div class="card-footer">
+      <img src="images/image-avatar.png" alt="profile picture of Jules Wuvern"/>
+      <div>
+        Creation of <span>Jules Wyvern</span>
+      </div> 
+    </div>
+
+  </main>
+
+
+
   
-  Creation of Jules Wyvern
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

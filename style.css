@@ -1,0 +1,113 @@
+:root {
+  --soft-blue:hsl(215,51%,70%);
+  --cyan:hsl(178,100%,50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg:hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 368px;
+  padding: 24px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 320px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  color: var(--white);
+  font-weight: 400;
+  font-size:24px;
+  margin-block: 24px;
+}
+
+.card p {
+  color: var(--soft-blue);  
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+}
+
+.eth  { 
+  background: url(images/icon-ethereum.svg) left center no-repeat;
+  font-size:0.9rem;
+  padding-left: 15px;
+  color: var(--cyan);  
+}
+
+.clock {
+  background: url(images/icon-clock.svg) left center no-repeat;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var(--soft-blue);
+}
+
+.card-footer { 
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.card-footer img {
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--cyan);
+  margin-right: 10px;
+}
+
+.card-footer div {
+  color: var(--soft-blue);
+}
+
+.card-footer span {
+  color: var(--white);
+}
+
+
+
+
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+
+  margin-top:20px;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
