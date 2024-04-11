@@ -34,9 +34,40 @@ body {
   flex-direction: column;
 }
 
-.card img {
+.images-wrapper { 
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+.card .view-wrapper { 
+  position: absolute;
+  width: 320px;  
+  height: 320px;
+  text-align: center;
+  padding-top: 43%;
+}
+
+.card .view-wrapper img {
+  display: none;
+  position: absolute;
+  left:43%;
+}
+
+.card .view-wrapper:hover img {
+  display: flex;
+  align-self: center;
+}
+
+.card .view-wrapper:hover {
+  cursor: pointer;
+  display: block;
+  background: rgba(0, 255, 247, 0.5);
+}
+
+.card .equilibrium {
   width: 320px;
-  border-radius: 8px;
 }
 
 .card h2 {
@@ -44,6 +75,10 @@ body {
   font-weight: 400;
   font-size:24px;
   margin-block: 24px;
+}
+.card h2:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 .card p {
@@ -84,7 +119,7 @@ body {
 .card-footer img {
   width: 36px;
   border-radius: 50%;
-  border: 1px solid var(--cyan);
+  border: 1px solid var(--white);
   margin-right: 10px;
 }
 
@@ -96,18 +131,24 @@ body {
   color: var(--white);
 }
 
-
-
-
-
+.card-footer span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
 
 .attribution { 
-  font-size: 11px; 
+  color: var(--white);
+  font-size: 12px; 
   text-align: center; 
-
   margin-top:20px;
+  letter-spacing: 1px;
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: var(--cyan);
+  transition: 250ms;
+}
+
+.attribution a:hover {
+  color: #144750;
 }
